@@ -1,4 +1,4 @@
-﻿namespace ShiqvliziLib.SnakeGame
+﻿namespace NullLib.SnakeGame
 {
     public interface ISnakeMapRenderer
     {

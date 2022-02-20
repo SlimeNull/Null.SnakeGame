@@ -1,6 +1,6 @@
 ﻿using System.Threading.Tasks;
 
-namespace ShiqvliziLib.SnakeGame
+namespace NullLib.SnakeGame
 {
     /// <summary>
     /// 贪吃蛇游戏控制器

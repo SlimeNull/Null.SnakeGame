@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace ShiqvliziLib.SnakeGame
+namespace NullLib.SnakeGame
 {
     public partial class SnakeMap
     {

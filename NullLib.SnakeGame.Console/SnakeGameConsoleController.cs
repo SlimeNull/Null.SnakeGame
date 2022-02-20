@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ShiqvliziLib.SnakeGame.Console
+namespace NullLib.SnakeGame.Console
 {
     /// <summary>
     /// 贪吃蛇游戏控制台控制器

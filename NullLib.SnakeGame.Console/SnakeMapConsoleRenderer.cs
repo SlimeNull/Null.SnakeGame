@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace ShiqvliziLib.SnakeGame.Console
+namespace NullLib.SnakeGame.Console
 {
     public class SnakeMapConsoleRenderer : ISnakeMapRenderer
     {

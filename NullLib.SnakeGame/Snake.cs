@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace ShiqvliziLib.SnakeGame
+namespace NullLib.SnakeGame
 {
     public class Snake
     {

@@ -4,7 +4,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace ShiqvliziLib.SnakeGame
+namespace NullLib.SnakeGame
 {
     public class SnakeGameCore
     {
