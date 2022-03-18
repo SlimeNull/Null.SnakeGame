@@ -1,12 +1,33 @@
 # Null.SnakeGame
 
-一个面向对象的, 可拓展的, 简单易用的贪吃蛇小游戏. 由 @SlimeNull 编写
-
-> 啥? 你问我为啥这项目在 @Shiqvlizi 的仓库里? 因为本来这是我为他写的, 然后写着写着, 就改成自己的名字了233
+一个面向对象的, 可拓展的, 简单易用的贪吃蛇小游戏.
 
 ## 简单使用
 ```csharp
+SnakeGameCore game = new SnakeGameCore(new SnakeMap(30, 30)    // 实例化游戏对象
+{
+    new Snake(SnakeMoveDirection.Right, 5, 5, 3),              // 第一条蛇
+    new Snake(SnakeMoveDirection.Left, 24, 24, 3)              // 第二条蛇
+});
+game.SnakeMapRenderer = new SnakeMapConsoleRenderer();         // 应用控制台游戏渲染器
 
+SnakeGameConsoleController gameController = new SnakeGameConsoleController();   // 实例化控制台游戏控制器
+gameController
+    .SetStartKey(ConsoleKey.Spacebar)      // 设置各种用于游戏操作的按键
+    .SetPauseKey(ConsoleKey.P)
+    .SetResumeKey(ConsoleKey.P)
+    .SetStopKey(ConsoleKey.Escape)
+    .SetSnakeKeys(game.Map[0],
+        ConsoleKey.A, ConsoleKey.W, ConsoleKey.D, ConsoleKey.S)
+    .SetSnakeKeys(game.Map[1],
+        ConsoleKey.LeftArrow, ConsoleKey.UpArrow, ConsoleKey.RightArrow, ConsoleKey.DownArrow);
+
+Console.WriteLine("按 空格 开始游戏 (30x30, x2)");   // 打印一个提示信息
+
+gameController.HandleController(game);               // 开启游戏主进程
+
+Console.WriteLine("游戏结束");
+Console.ReadKey();
 ```
 
 ##  项目列表

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using System.Linq;
 
 namespace NullLib.SnakeGame
 {
@@ -18,6 +19,8 @@ namespace NullLib.SnakeGame
         public int TimespanPerStep { get; set; } = 150;       // 每一次刷新的间隔
 
         public ISnakeMapRenderer? SnakeMapRenderer { get; set; }  // 用来绘制贪吃蛇地图的绘制器(Drawer)
+
+        public IList<Snake> Snakes => Map;
 
         public SnakeGameCore(SnakeMap map)
         {
